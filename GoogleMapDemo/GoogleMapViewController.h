@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GoogleMapViewController : UIViewController
+@property (nonatomic, assign) int checkState; // 0: out 1: in
 
 @end
 

@@ -7,11 +7,14 @@
 
 #import "GoogleMapViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import <SPUIKit/SPUIKit.h>
 
 @interface GoogleMapViewController () <GMSMapViewDelegate>
 //@interface GoogleMapViewController ()
 @property (nonatomic, strong) GMSMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIView *controlPannel;
 @property (nonatomic, assign) BOOL firstLocationUpdate;
+@property (weak, nonatomic) IBOutlet UIView *stateView;
 @end
 
 @implementation GoogleMapViewController
@@ -43,7 +46,7 @@
     self.mapView.settings.compassButton = YES;
     self.mapView.settings.myLocationButton = YES;
 
-    [self.view addSubview:self.mapView];
+    [self.view insertSubview:self.mapView belowSubview:self.controlPannel];
 
     [self.mapView addObserver:self
                forKeyPath:@"myLocation"
@@ -54,11 +57,24 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         self.mapView.myLocationEnabled = YES;
     });
+    
+    [self createCircle];
 }
 
 - (void)destroyMapView {
     [self.mapView removeFromSuperview];
     self.mapView = nil;
+    self.firstLocationUpdate = false;
+}
+
+- (void)createCircle {
+    GMSCircle *circle = [[GMSCircle alloc] init];
+    circle.position = CLLocationCoordinate2DMake(30.507544369000442,114.4133872013031);
+    circle.radius = 300;
+    circle.strokeWidth = 0;
+    circle.fillColor = [UIColor colorWithHexString:@"7EADFFA8"];
+    
+    circle.map = self.mapView;
 }
 
 - (void)didEnterBackground:(NSNotification *)noti {
@@ -79,7 +95,32 @@
     _firstLocationUpdate = YES;
     CLLocation *location = [change objectForKey:NSKeyValueChangeNewKey];
     _mapView.camera = [GMSCameraPosition cameraWithTarget:location.coordinate
-                                                     zoom:14];
+                                                     zoom:15];
   }
+}
+- (IBAction)checkInButtonPressed:(id)sender {
+    [self checkIn];
+}
+
+- (IBAction)checkoutButtonPressed:(id)sender {
+    [self checkOut];
+}
+
+- (void)checkIn {
+    self.checkState = 1;
+}
+
+- (void)checkOut {
+    self.checkState = 0;
+}
+
+- (void)setCheckState:(int)checkState {
+    _checkState = checkState;
+    
+    if (checkState == 1) {
+        self.stateView.backgroundColor = [UIColor greenColor];
+    } else {
+        self.stateView.backgroundColor = [UIColor redColor];
+    }
 }
 @end

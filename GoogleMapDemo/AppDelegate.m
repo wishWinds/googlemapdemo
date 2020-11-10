@@ -11,6 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <UserNotifications/UserNotifications.h>
 #import <JZLocationConverter/JZLocationConverter.h>
+#import "GoogleMapViewController.h"
 
 @interface AppDelegate () <CLLocationManagerDelegate>
 @property (nonatomic, assign) NSInteger index;
@@ -78,7 +79,7 @@
     
     
     // 设置区域半径
-    CLLocationDistance radius = 20;
+    CLLocationDistance radius = 200;
     // 使用前必须判定当前的监听区域半径是否大于最大可被监听的区域半径
     if(radius > self.locationManager.maximumRegionMonitoringDistance) {
         radius = self.locationManager.maximumRegionMonitoringDistance;
@@ -120,14 +121,18 @@
 
 // 进入指定区域以后将弹出提示框提示用户
 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
-    NSString *msg = [NSString stringWithFormat:@"Check-In \n Enter Region %@", region.identifier];
-    [self dealAlertWithStr:msg];
+//    NSString *msg = [NSString stringWithFormat:@"Check-In \n Enter Region %@", region.identifier];
+//    [self dealAlertWithStr:msg];
+    
+    [self mapVC].checkState = 1;
 }
 
 // 离开指定区域以后将弹出提示框提示用户
 - (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
-    NSString *msg = [NSString stringWithFormat:@"Check-Out \n exit Region %@", region.identifier];
-    [self dealAlertWithStr:msg];
+//    NSString *msg = [NSString stringWithFormat:@"Check-Out \n exit Region %@", region.identifier];
+//    [self dealAlertWithStr:msg];
+    
+    [self mapVC].checkState = 0;
 }
 
 // 监听区域失败时调用
@@ -169,7 +174,7 @@
         default:
             break;
     }
-    [self alertWithMsg:str];
+//    [self alertWithMsg:str];
 }
 
 // 本地通知
@@ -212,7 +217,11 @@
                                                      style:UIAlertActionStyleCancel
                                                    handler:nil];
     [alert addAction:action];
-    UINavigationController *nav = (UINavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    [nav.topViewController presentViewController:alert animated:YES completion:nil];
+    UIViewController *vc = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [vc presentViewController:alert animated:YES completion:nil];
+}
+
+- (GoogleMapViewController *)mapVC {
+    return self.window.rootViewController;
 }
 @end
