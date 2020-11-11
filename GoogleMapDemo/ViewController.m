@@ -7,8 +7,6 @@
 
 #import "ViewController.h"
 #import "GoogleMapViewController.h"
-#import <SPUIKit/SPUIKit.h>
-#import <SPUtilities/SPUtilities.h>
 
 @interface ViewController ()
 
@@ -22,7 +20,7 @@
 }
 
 - (IBAction)googleMapButtonPressed:(id)sender {
-    GoogleMapViewController *vc = STBDMainVC([GoogleMapViewController className]);
+    GoogleMapViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"GoogleMapViewController"];
     [self.navigationController pushViewController:vc animated:true];
 }
 

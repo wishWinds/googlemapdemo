@@ -7,7 +7,6 @@
 
 #import "AppDelegate.h"
 #import <GoogleMaps/GoogleMaps.h>
-#import <SPUtilities/SPUtilities.h>
 #import <CoreLocation/CoreLocation.h>
 #import <UserNotifications/UserNotifications.h>
 #import <JZLocationConverter/JZLocationConverter.h>
@@ -38,6 +37,7 @@
     
     [GMSServices provideAPIKey:@"AIzaSyAIJ7r2eJCRsSIqACaORYKA7iXkcwQ6TKg"];
     
+    /*
     DispatchBackground(^{
         while (true) {
             DispatchMainSafe(^{
@@ -47,6 +47,7 @@
             sleep(1);
         }
     });
+     */
     
     _locationManager = [CLLocationManager new];
     _locationManager.delegate = self;

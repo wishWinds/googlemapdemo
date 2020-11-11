@@ -1,108 +1,24 @@
 PODS:
-  - AFNetworking (4.0.1):
-    - AFNetworking/NSURLSession (= 4.0.1)
-    - AFNetworking/Reachability (= 4.0.1)
-    - AFNetworking/Security (= 4.0.1)
-    - AFNetworking/Serialization (= 4.0.1)
-    - AFNetworking/UIKit (= 4.0.1)
-  - AFNetworking/NSURLSession (4.0.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (4.0.1)
-  - AFNetworking/Security (4.0.1)
-  - AFNetworking/Serialization (4.0.1)
-  - AFNetworking/UIKit (4.0.1):
-    - AFNetworking/NSURLSession
-  - Aspects (1.4.1)
   - GoogleMaps (4.0.0):
     - GoogleMaps/Maps (= 4.0.0)
   - GoogleMaps/Base (4.0.0)
   - GoogleMaps/Maps (4.0.0):
     - GoogleMaps/Base
   - JZLocationConverter (1.0.0)
-  - Masonry (1.1.0)
-  - SDWebImage (5.9.3):
-    - SDWebImage/Core (= 5.9.3)
-  - SDWebImage/Core (5.9.3)
-  - SPTools (1.0):
-    - SPTools/APIMgr (= 1.0)
-    - SPTools/NetworkMgr (= 1.0)
-    - SPTools/SPMessageCenter (= 1.0)
-    - SPTools/SPSession (= 1.0)
-  - SPTools/APIMgr (1.0)
-  - SPTools/NetworkMgr (1.0):
-    - AFNetworking
-  - SPTools/SPMessageCenter (1.0):
-    - SPUtilities
-  - SPTools/SPSession (1.0):
-    - SPUtilities
-  - SPUIKit (1.0):
-    - SPUIKit/SPBaseViewControllers (= 1.0)
-    - SPUIKit/SPViews (= 1.0)
-    - SPUIKit/UIKit-Categories (= 1.0)
-  - SPUIKit/SPBaseViewControllers (1.0):
-    - Aspects
-    - Masonry
-    - SPUIKit/SPViews
-    - SPUIKit/UIKit-Categories
-    - SPUtilities
-  - SPUIKit/SPViews (1.0):
-    - Masonry
-    - SDWebImage
-    - SPUIKit/UIKit-Categories
-    - SPUtilities
-  - SPUIKit/UIKit-Categories (1.0):
-    - SPUtilities
-  - SPUtilities (1.0):
-    - SPUtilities/Defines (= 1.0)
-    - SPUtilities/Foundation-Categories (= 1.0)
-    - SPUtilities/Objc-Utilities (= 1.0)
-    - SPUtilities/Quartz (= 1.0)
-    - SPUtilities/YYUtilities (= 1.0)
-  - SPUtilities/Defines (1.0):
-    - SPUtilities/Foundation-Categories
-  - SPUtilities/Foundation-Categories (1.0)
-  - SPUtilities/Objc-Utilities (1.0)
-  - SPUtilities/Quartz (1.0)
-  - SPUtilities/YYUtilities (1.0):
-    - SPUtilities/Defines
 
 DEPENDENCIES:
   - GoogleMaps (= 4.0.0)
   - JZLocationConverter
-  - SPTools (from `../../lib/SPTools`)
-  - SPUIKit (from `../../lib/SPUIKit`)
-  - SPUtilities (from `../../lib/SPUtilities`)
 
 SPEC REPOS:
   trunk:
-    - AFNetworking
-    - Aspects
     - GoogleMaps
     - JZLocationConverter
-    - Masonry
-    - SDWebImage
-
-EXTERNAL SOURCES:
-  SPTools:
-    :path: "../../lib/SPTools"
-  SPUIKit:
-    :path: "../../lib/SPUIKit"
-  SPUtilities:
-    :path: "../../lib/SPUtilities"
 
 SPEC CHECKSUMS:
-  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   GoogleMaps: b7f7fc569a9b354a3af0d9729dbec40957b7d41e
   JZLocationConverter: 3d816bee6484aed9c155a6045a02ce444833e2f0
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SDWebImage: a31ee8e90a97303529e03fb0c333eae0eacb88e9
-  SPTools: 4a4ee4776b8cb11e2b63e06f463b4f5791864162
-  SPUIKit: ec3294a6d1c7b3fba8001f05f0f2231a2b8e7057
-  SPUtilities: 7d1088c35e1ba6786882aaaaabe6386fe8c3bc09
 
-PODFILE CHECKSUM: daee726b841f970ca8fea684bd8003753361759e
+PODFILE CHECKSUM: 1ad1e6c7e865617ceee0c02f7d07ef85acf20dce
 
 COCOAPODS: 1.10.0

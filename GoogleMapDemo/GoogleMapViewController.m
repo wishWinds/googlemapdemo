@@ -7,7 +7,6 @@
 
 #import "GoogleMapViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
-#import <SPUIKit/SPUIKit.h>
 
 @interface GoogleMapViewController () <GMSMapViewDelegate>
 //@interface GoogleMapViewController ()
@@ -72,7 +71,7 @@
     circle.position = CLLocationCoordinate2DMake(30.507544369000442,114.4133872013031);
     circle.radius = 300;
     circle.strokeWidth = 0;
-    circle.fillColor = [UIColor colorWithHexString:@"7EADFFA8"];
+    circle.fillColor = [UIColor colorWithDisplayP3Red:0.5 green:0.67 blue:1 alpha:0.66];
     
     circle.map = self.mapView;
 }
