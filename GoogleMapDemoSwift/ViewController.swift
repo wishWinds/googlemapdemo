@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  GoogleMapDemoSwift
 //
-//  Created by shupeng on 2020/11/11.
+//  Created by dev on 2020/11/11.
 //
 
 import UIKit
