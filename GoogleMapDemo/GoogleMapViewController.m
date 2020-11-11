@@ -2,7 +2,7 @@
 //  GoogleMapViewController.m
 //  GoogleMapDemo
 //
-//  Created by shupeng on 2020/11/9.
+//  Created by dev on 2020/11/9.
 //
 
 #import "GoogleMapViewController.h"
@@ -36,8 +36,8 @@
         return;
     }
 
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-33.868
-                                                            longitude:151.2086
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-33.711431
+                                                            longitude:151.1080853
                                                                  zoom:12];
 
     self.mapView = [GMSMapView mapWithFrame:self.view.bounds camera:camera];
@@ -68,7 +68,7 @@
 
 - (void)createCircle {
     GMSCircle *circle = [[GMSCircle alloc] init];
-    circle.position = CLLocationCoordinate2DMake(30.507544369000442,114.4133872013031);
+    circle.position = CLLocationCoordinate2DMake(-33.711431, 151.1080853);
     circle.radius = 300;
     circle.strokeWidth = 0;
     circle.fillColor = [UIColor colorWithDisplayP3Red:0.5 green:0.67 blue:1 alpha:0.66];
@@ -92,7 +92,7 @@
     // If the first location update has not yet been received, then jump to that
     // location.
     _firstLocationUpdate = YES;
-    CLLocation *location = [change objectForKey:NSKeyValueChangeNewKey];
+    CLLocation *location = change[NSKeyValueChangeNewKey];
     _mapView.camera = [GMSCameraPosition cameraWithTarget:location.coordinate
                                                      zoom:15];
   }

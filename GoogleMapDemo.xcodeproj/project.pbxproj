@@ -9,14 +9,12 @@
 /* Begin PBXBuildFile section */
 		B980CF9B2364A93761E22AFA /* Pods_GoogleMapDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D728BBD7CD86302682DF0E /* Pods_GoogleMapDemo.framework */; };
 		FE168FE525593DDE004F4FC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE168FE425593DDE004F4FC1 /* AppDelegate.m */; };
-		FE168FEB25593DDE004F4FC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE168FEA25593DDE004F4FC1 /* ViewController.m */; };
 		FE168FEE25593DDE004F4FC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE168FEC25593DDE004F4FC1 /* Main.storyboard */; };
 		FE168FF025593DE0004F4FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE168FEF25593DE0004F4FC1 /* Assets.xcassets */; };
 		FE168FF325593DE0004F4FC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE168FF125593DE0004F4FC1 /* LaunchScreen.storyboard */; };
 		FE168FF625593DE0004F4FC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE168FF525593DE0004F4FC1 /* main.m */; };
 		FEC58D3E255953C60027D065 /* GoogleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC58D3D255953C60027D065 /* GoogleMapViewController.m */; };
-		FEC58D5A255A4EAE0027D065 /* 10-11月-2020-1228.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FEC58D59255A4EAE0027D065 /* 10-11月-2020-1228.gpx */; };
-		FEC58D84255AB32B0027D065 /* 10-11月-2020-1937.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FEC58D83255AB32B0027D065 /* 10-11月-2020-1937.gpx */; };
+		FEC58D84255AB32B0027D065 /* 11-10-2020-1937.gpx in Resources */ = {isa = PBXBuildFile; fileRef = FEC58D83255AB32B0027D065 /* 11-10-2020-1937.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +24,6 @@
 		FE168FE025593DDE004F4FC1 /* GoogleMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE168FE325593DDE004F4FC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FE168FE425593DDE004F4FC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FE168FE925593DDE004F4FC1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FE168FEA25593DDE004F4FC1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FE168FED25593DDE004F4FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE168FEF25593DE0004F4FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE168FF225593DE0004F4FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,8 +31,7 @@
 		FE168FF525593DE0004F4FC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEC58D3C255953C60027D065 /* GoogleMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMapViewController.h; sourceTree = "<group>"; };
 		FEC58D3D255953C60027D065 /* GoogleMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleMapViewController.m; sourceTree = "<group>"; };
-		FEC58D59255A4EAE0027D065 /* 10-11月-2020-1228.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "10-11月-2020-1228.gpx"; sourceTree = "<group>"; };
-		FEC58D83255AB32B0027D065 /* 10-11月-2020-1937.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "10-11月-2020-1937.gpx"; sourceTree = "<group>"; };
+		FEC58D83255AB32B0027D065 /* 11-10-2020-1937.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "11-10-2020-1937.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +87,6 @@
 			children = (
 				FE168FE325593DDE004F4FC1 /* AppDelegate.h */,
 				FE168FE425593DDE004F4FC1 /* AppDelegate.m */,
-				FE168FE925593DDE004F4FC1 /* ViewController.h */,
-				FE168FEA25593DDE004F4FC1 /* ViewController.m */,
 				FE168FEC25593DDE004F4FC1 /* Main.storyboard */,
 				FE168FEF25593DE0004F4FC1 /* Assets.xcassets */,
 				FE168FF125593DE0004F4FC1 /* LaunchScreen.storyboard */,
@@ -108,8 +101,7 @@
 		FEC58D58255A4EA10027D065 /* GPX files */ = {
 			isa = PBXGroup;
 			children = (
-				FEC58D59255A4EAE0027D065 /* 10-11月-2020-1228.gpx */,
-				FEC58D83255AB32B0027D065 /* 10-11月-2020-1937.gpx */,
+				FEC58D83255AB32B0027D065 /* 11-10-2020-1937.gpx */,
 			);
 			path = "GPX files";
 			sourceTree = "<group>";
@@ -173,10 +165,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEC58D5A255A4EAE0027D065 /* 10-11月-2020-1228.gpx in Resources */,
 				FE168FF325593DE0004F4FC1 /* LaunchScreen.storyboard in Resources */,
 				FE168FF025593DE0004F4FC1 /* Assets.xcassets in Resources */,
-				FEC58D84255AB32B0027D065 /* 10-11月-2020-1937.gpx in Resources */,
+				FEC58D84255AB32B0027D065 /* 11-10-2020-1937.gpx in Resources */,
 				FE168FEE25593DDE004F4FC1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE168FEB25593DDE004F4FC1 /* ViewController.m in Sources */,
 				FE168FE525593DDE004F4FC1 /* AppDelegate.m in Sources */,
 				FEC58D3E255953C60027D065 /* GoogleMapViewController.m in Sources */,
 				FE168FF625593DE0004F4FC1 /* main.m in Sources */,

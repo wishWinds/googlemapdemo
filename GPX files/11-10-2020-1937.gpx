@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1">
+	<wpt lat="-33.711431" lon="151.1080853">
+		<time>2020-11-10T11:37:43Z</time>
+		<name>19:37:40</name>
+	</wpt>
+	<wpt lat="-33.711240" lon="151.114122">
+		<time>2020-11-10T11:37:47Z</time>
+		<name>19:37:45</name>
+	</wpt>
+	<wpt lat="-33.705365" lon="151.114400">
+		<time>2020-11-10T11:37:52Z</time>
+		<name>19:37:50</name>
+	</wpt>
+	<wpt lat="-33.704902" lon="151.107552">
+		<time>2020-11-10T11:37:55Z</time>
+		<name>19:37:55</name>
+	</wpt>
+    <wpt lat="-33.711431" lon="151.1080853">
+        <time>2020-11-10T11:38:00Z</time>
+        <name>19:38:00</name>
+    </wpt>
+	<trk>
+	</trk>
+</gpx>

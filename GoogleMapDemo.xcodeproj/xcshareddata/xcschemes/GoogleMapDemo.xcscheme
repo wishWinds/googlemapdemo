@@ -51,7 +51,7 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <LocationScenarioReference
-         identifier = "../GPX files/10-11&#x6708;-2020-1937.gpx"
+         identifier = "../GPX files/11-10-2020-1937.gpx"
          referenceType = "0">
       </LocationScenarioReference>
    </LaunchAction>
