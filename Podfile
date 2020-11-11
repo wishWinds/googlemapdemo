@@ -10,9 +10,13 @@ target 'GoogleMapDemo' do
   # Pods for GoogleMapDemo
   pod 'GoogleMaps', '4.0.0'
   
-  pod 'SPUtilities', :path => '../../lib/SPUtilities'
-  pod 'SPUIKit', :path => '../../lib/SPUIKit'
-  pod 'SPTools', :path => '../../lib/SPTools'
+#  pod 'SPUtilities', :path => '../../lib/SPUtilities'
+#  pod 'SPUIKit', :path => '../../lib/SPUIKit'
+#  pod 'SPTools', :path => '../../lib/SPTools'
+  
+  pod 'SPUtilities', :git => 'https://git.xiaocaomei.site:4430/shupeng/SPUtilities.git'
+  pod 'SPUIKit', :path => 'https://git.xiaocaomei.site:4430/shupeng/SPUIKit.git'
+  pod 'SPTools', :path => 'https://git.xiaocaomei.site:4430/shupeng/SPTools.git'
   
   pod 'JZLocationConverter'
 end
