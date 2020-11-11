@@ -48,10 +48,12 @@
     self.locationManager.distanceFilter = 5.0f;
 
 
-    self.locationManager.pausesLocationUpdatesAutomatically = true; // let system stop update location if needed
-    self.locationManager.allowsBackgroundLocationUpdates = false; // disallow background mode, we does not need for NOW!
+    self.locationManager.pausesLocationUpdatesAutomatically = false; // let system stop update location if needed
+    self.locationManager.allowsBackgroundLocationUpdates = true; // disallow background mode, we does not need for NOW!
 
     [self.locationManager requestAlwaysAuthorization];
+    
+    [self.locationManager startUpdatingLocation];
 }
 
 - (void)clearPrevilousRegions {
