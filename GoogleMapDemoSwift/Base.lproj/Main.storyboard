@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fd3-Fm-FMz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="soz-dO-2zf">
+            <objects>
+                <viewController storyboardIdentifier="GoogleMapViewController" id="fd3-Fm-FMz" customClass="ViewController" customModule="GoogleMapDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VR2-Ys-VbV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSn-No-oOl">
+                                <rect key="frame" x="0.0" y="696" width="414" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="JTi-MX-Oh0">
+                                        <rect key="frame" x="132" y="30" width="150" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSN-mj-yVf">
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v36-DX-FWP">
+                                                <rect key="frame" x="120" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="HtF-gj-1SA"/>
+                                                    <constraint firstAttribute="width" constant="30" id="qCU-nQ-3s2"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="EVI-bV-uVS">
+                                        <rect key="frame" x="94" y="68" width="226" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2L-6o-ete">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="bd5-7F-GUu"/>
+                                                    <constraint firstAttribute="width" constant="80" id="bzW-J2-4xz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Check-In"/>
+                                                <connections>
+                                                    <action selector="checkinButtonPressed:" destination="fd3-Fm-FMz" eventType="touchUpInside" id="kQz-JO-iwj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apx-8h-vjq">
+                                                <rect key="frame" x="146" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="NM6-Wb-WJE"/>
+                                                    <constraint firstAttribute="height" constant="80" id="ikS-cn-SGF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Check-Out"/>
+                                                <connections>
+                                                    <action selector="checkoutButtonPressed:" destination="fd3-Fm-FMz" eventType="touchUpInside" id="f8k-tL-QoM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30458523199999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="EVI-bV-uVS" firstAttribute="centerX" secondItem="XSn-No-oOl" secondAttribute="centerX" id="3BJ-DM-rKc"/>
+                                    <constraint firstAttribute="height" constant="200" id="BHK-vO-BH2"/>
+                                    <constraint firstItem="JTi-MX-Oh0" firstAttribute="centerX" secondItem="XSn-No-oOl" secondAttribute="centerX" id="VLt-u7-IzP"/>
+                                    <constraint firstItem="EVI-bV-uVS" firstAttribute="top" secondItem="JTi-MX-Oh0" secondAttribute="bottom" constant="8" id="ZCE-4s-stb"/>
+                                    <constraint firstItem="JTi-MX-Oh0" firstAttribute="top" secondItem="XSn-No-oOl" secondAttribute="top" constant="30" id="iSE-ld-doQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5RS-ah-XV3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XSn-No-oOl" firstAttribute="leading" secondItem="5RS-ah-XV3" secondAttribute="leading" id="Em2-JP-b3y"/>
+                            <constraint firstItem="XSn-No-oOl" firstAttribute="trailing" secondItem="5RS-ah-XV3" secondAttribute="trailing" id="gIB-N5-q4w"/>
+                            <constraint firstAttribute="bottom" secondItem="XSn-No-oOl" secondAttribute="bottom" id="ooi-RS-13J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="controlPanel" destination="XSn-No-oOl" id="KEV-IR-3O5"/>
+                        <outlet property="stateView" destination="v36-DX-FWP" id="Pd9-UG-po3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrP-Wt-cYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1866.6666666666667" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
