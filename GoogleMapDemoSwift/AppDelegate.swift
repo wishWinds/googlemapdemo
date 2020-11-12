@@ -50,9 +50,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             locationManager.pausesLocationUpdatesAutomatically = false
             locationManager.allowsBackgroundLocationUpdates = true
+            
+            locationManager.startUpdatingLocation()
         }
 
-        locationManager.startUpdatingLocation()
     }
     
     func setupRegions() {
