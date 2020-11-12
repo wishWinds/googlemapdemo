@@ -4,17 +4,21 @@ PODS:
   - GoogleMaps/Base (4.0.0)
   - GoogleMaps/Maps (4.0.0):
     - GoogleMaps/Base
+  - JZLocationConverter (1.0.0)
 
 DEPENDENCIES:
   - GoogleMaps (= 4.0.0)
+  - JZLocationConverter
 
 SPEC REPOS:
   trunk:
     - GoogleMaps
+    - JZLocationConverter
 
 SPEC CHECKSUMS:
   GoogleMaps: b7f7fc569a9b354a3af0d9729dbec40957b7d41e
+  JZLocationConverter: 3d816bee6484aed9c155a6045a02ce444833e2f0
 
-PODFILE CHECKSUM: c813988533cd8a6aab4c3000f1c9fd0536d161c1
+PODFILE CHECKSUM: fd9bcfb5853126d93d62cf262c678e8ffe970b40
 
 COCOAPODS: 1.10.0

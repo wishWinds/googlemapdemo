@@ -7,4 +7,5 @@ target 'GoogleMapDemoSwift' do
   use_frameworks!
 
   pod 'GoogleMaps', '4.0.0'
+  pod 'JZLocationConverter'
 end

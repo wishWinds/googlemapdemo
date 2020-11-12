@@ -14,6 +14,14 @@
 		FE740DF0255C1CE30088ABF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE740DEF255C1CE30088ABF1 /* Assets.xcassets */; };
 		FE740DF3255C1CE30088ABF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE740DF1255C1CE30088ABF1 /* LaunchScreen.storyboard */; };
 		FE740E07255C209D0088ABF1 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE740E06255C209D0088ABF1 /* constants.swift */; };
+		FE740E0F255D42B10088ABF1 /* RegionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE740E0E255D42B10088ABF1 /* RegionManager.swift */; };
+		FE740E12255D79A90088ABF1 /* UNUserNotificationCenterExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE740E11255D79A90088ABF1 /* UNUserNotificationCenterExt.swift */; };
+		FE740E20255D91260088ABF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE740E1F255D91260088ABF1 /* AppDelegate.swift */; };
+		FE740E22255D91260088ABF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE740E21255D91260088ABF1 /* SceneDelegate.swift */; };
+		FE740E24255D91260088ABF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE740E23255D91260088ABF1 /* ViewController.swift */; };
+		FE740E27255D91260088ABF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE740E25255D91260088ABF1 /* Main.storyboard */; };
+		FE740E29255D91290088ABF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE740E28255D91290088ABF1 /* Assets.xcassets */; };
+		FE740E2C255D91290088ABF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE740E2A255D91290088ABF1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,16 @@
 		FE740DF2255C1CE30088ABF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE740DF4255C1CE30088ABF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE740E06255C209D0088ABF1 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		FE740E0E255D42B10088ABF1 /* RegionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionManager.swift; sourceTree = "<group>"; };
+		FE740E11255D79A90088ABF1 /* UNUserNotificationCenterExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNUserNotificationCenterExt.swift; sourceTree = "<group>"; };
+		FE740E1D255D91260088ABF1 /* GPSSimulate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSSimulate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE740E1F255D91260088ABF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE740E21255D91260088ABF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FE740E23255D91260088ABF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE740E26255D91260088ABF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE740E28255D91290088ABF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE740E2B255D91290088ABF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE740E2D255D91290088ABF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEC58D83255AB32B0027D065 /* 11-10-2020-1937.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "11-10-2020-1937.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +55,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0427BE12B398A9DBC437FA8F /* Pods_GoogleMapDemoSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE740E1A255D91260088ABF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +90,7 @@
 			children = (
 				FEC58D58255A4EA10027D065 /* GPX files */,
 				FE740DE5255C1CE00088ABF1 /* GoogleMapDemoSwift */,
+				FE740E1E255D91260088ABF1 /* GPSSimulate */,
 				FE168FE125593DDE004F4FC1 /* Products */,
 				70C1A6CB0D10EA9157B7CBFC /* Pods */,
 				0AC202954E91EC25FCC86ABC /* Frameworks */,
@@ -75,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				FE740DE4255C1CE00088ABF1 /* GoogleMapDemoSwift.app */,
+				FE740E1D255D91260088ABF1 /* GPSSimulate.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				FE740E06255C209D0088ABF1 /* constants.swift */,
+				FE740E0E255D42B10088ABF1 /* RegionManager.swift */,
+				FE740E11255D79A90088ABF1 /* UNUserNotificationCenterExt.swift */,
 				FE740DE6255C1CE00088ABF1 /* AppDelegate.swift */,
 				FE740DEA255C1CE00088ABF1 /* ViewController.swift */,
 				FE740DEC255C1CE00088ABF1 /* Main.storyboard */,
@@ -91,6 +120,20 @@
 				FE740DF4255C1CE30088ABF1 /* Info.plist */,
 			);
 			path = GoogleMapDemoSwift;
+			sourceTree = "<group>";
+		};
+		FE740E1E255D91260088ABF1 /* GPSSimulate */ = {
+			isa = PBXGroup;
+			children = (
+				FE740E1F255D91260088ABF1 /* AppDelegate.swift */,
+				FE740E21255D91260088ABF1 /* SceneDelegate.swift */,
+				FE740E23255D91260088ABF1 /* ViewController.swift */,
+				FE740E25255D91260088ABF1 /* Main.storyboard */,
+				FE740E28255D91290088ABF1 /* Assets.xcassets */,
+				FE740E2A255D91290088ABF1 /* LaunchScreen.storyboard */,
+				FE740E2D255D91290088ABF1 /* Info.plist */,
+			);
+			path = GPSSimulate;
 			sourceTree = "<group>";
 		};
 		FEC58D58255A4EA10027D065 /* GPX files */ = {
@@ -113,6 +156,7 @@
 				FE740DE1255C1CE00088ABF1 /* Frameworks */,
 				FE740DE2255C1CE00088ABF1 /* Resources */,
 				50A705E710771D55E2365F5E /* [CP] Copy Pods Resources */,
+				C8FC16A80605C7AAFD473EEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,6 +165,23 @@
 			name = GoogleMapDemoSwift;
 			productName = GoogleMapDemoSwift;
 			productReference = FE740DE4255C1CE00088ABF1 /* GoogleMapDemoSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE740E1C255D91260088ABF1 /* GPSSimulate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE740E30255D91290088ABF1 /* Build configuration list for PBXNativeTarget "GPSSimulate" */;
+			buildPhases = (
+				FE740E19255D91260088ABF1 /* Sources */,
+				FE740E1A255D91260088ABF1 /* Frameworks */,
+				FE740E1B255D91260088ABF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSSimulate;
+			productName = GPSSimulate;
+			productReference = FE740E1D255D91260088ABF1 /* GPSSimulate.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,6 +194,9 @@
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					FE740DE3255C1CE00088ABF1 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					FE740E1C255D91260088ABF1 = {
 						CreatedOnToolsVersion = 12.1;
 					};
 				};
@@ -151,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				FE740DE3255C1CE00088ABF1 /* GoogleMapDemoSwift */,
+				FE740E1C255D91260088ABF1 /* GPSSimulate */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +228,16 @@
 				FE740DF3255C1CE30088ABF1 /* LaunchScreen.storyboard in Resources */,
 				FE740DF0255C1CE30088ABF1 /* Assets.xcassets in Resources */,
 				FE740DEE255C1CE00088ABF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE740E1B255D91260088ABF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE740E2C255D91290088ABF1 /* LaunchScreen.storyboard in Resources */,
+				FE740E29255D91290088ABF1 /* Assets.xcassets in Resources */,
+				FE740E27255D91260088ABF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +283,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleMapDemoSwift/Pods-GoogleMapDemoSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C8FC16A80605C7AAFD473EEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMapDemoSwift/Pods-GoogleMapDemoSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMapDemoSwift/Pods-GoogleMapDemoSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleMapDemoSwift/Pods-GoogleMapDemoSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,9 +307,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE740E12255D79A90088ABF1 /* UNUserNotificationCenterExt.swift in Sources */,
 				FE740DEB255C1CE00088ABF1 /* ViewController.swift in Sources */,
+				FE740E0F255D42B10088ABF1 /* RegionManager.swift in Sources */,
 				FE740DE7255C1CE00088ABF1 /* AppDelegate.swift in Sources */,
 				FE740E07255C209D0088ABF1 /* constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE740E19255D91260088ABF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE740E24255D91260088ABF1 /* ViewController.swift in Sources */,
+				FE740E20255D91260088ABF1 /* AppDelegate.swift in Sources */,
+				FE740E22255D91260088ABF1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +340,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				FE740DF2255C1CE30088ABF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FE740E25255D91260088ABF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE740E26255D91260088ABF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE740E2A255D91290088ABF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE740E2B255D91290088ABF1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -401,6 +521,50 @@
 			};
 			name = Release;
 		};
+		FE740E2E255D91290088ABF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TAXNVNJP42;
+				INFOPLIST_FILE = GPSSimulate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shupeng.GPSSimulate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE740E2F255D91290088ABF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TAXNVNJP42;
+				INFOPLIST_FILE = GPSSimulate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shupeng.GPSSimulate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,6 +582,15 @@
 			buildConfigurations = (
 				FE740DF6255C1CE30088ABF1 /* Debug */,
 				FE740DF7255C1CE30088ABF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE740E30255D91290088ABF1 /* Build configuration list for PBXNativeTarget "GPSSimulate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE740E2E255D91290088ABF1 /* Debug */,
+				FE740E2F255D91290088ABF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

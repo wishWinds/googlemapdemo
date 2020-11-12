@@ -19,8 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         setupLocalNotification()
         setupGMS()
-        setupLocationManager()
-        setupRegions()
+        RegionManager.shared
+        
+        if let _ = launchOptions?[UIApplication.LaunchOptionsKey.location] {
+            UNUserNotificationCenter.current().pushNotitfication(with: "Launch", body: "App has launch in background from location service")
+        }
         
         return true
     }
@@ -33,78 +36,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setupGMS() {
         GMSServices.provideAPIKey(gmsKey)
-    }
-    
-    func setupLocationManager() {
-        locationManager.delegate = self
-        
-        locationManager.requestAlwaysAuthorization()
-
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.distanceFilter = 5.0
-        
-        // disallow background mode for power efficiency
-        if powerEfficiencyEnabled {
-            locationManager.pausesLocationUpdatesAutomatically = true
-            locationManager.allowsBackgroundLocationUpdates = false
-        } else {
-            locationManager.pausesLocationUpdatesAutomatically = false
-            locationManager.allowsBackgroundLocationUpdates = true
-            
-            locationManager.startUpdatingLocation()
-        }
-
-    }
-    
-    func setupRegions() {
-        clearPreviousRegions()
-        
-        monitoringRetion(at: monitoringLocation)
-    }
-    
-    func clearPreviousRegions() {
-        locationManager.monitoredRegions.forEach { (region) in
-            locationManager.stopMonitoring(for: region)
-        }
-    }
-    
-    func monitoringRetion(at location: CLLocationCoordinate2D) {
-        var radius = CLLocationDistance(regionRadius * regionRadiusRadioForCoreLocation)
-        radius = min(locationManager.maximumRegionMonitoringDistance, radius)
-        
-        let region = CLCircularRegion(center: location, radius: radius, identifier: "\(location.latitude),\(location.longitude)")
-        locationManager.startMonitoring(for: region)
-        
-    }
-
-    func notify(_ msg: String) {
-        guard UIApplication.shared.applicationState != .active else {
-            return
-        }
-        
-        let notiContent = UNMutableNotificationContent()
-        notiContent.title = "GoogleMapDemoSwift"
-        notiContent.body = msg
-        notiContent.sound = .default
-        
-        let request = UNNotificationRequest(identifier: "noti", content: notiContent, trigger: nil)
-        
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-    }
-}
-
-extension AppDelegate: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        notify("Check In")
-        if let vc = window?.rootViewController as? ViewController {
-            vc.checkState = .in
-        }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        notify("Check Out")
-        if let vc = window?.rootViewController as? ViewController {
-            vc.checkState = .out
-        }
     }
 }

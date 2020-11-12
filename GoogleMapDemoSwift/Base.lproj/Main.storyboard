@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fd3-Fm-FMz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sYs-PX-Nz1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Demo-->
         <scene sceneID="soz-dO-2zf">
             <objects>
                 <viewController storyboardIdentifier="GoogleMapViewController" id="fd3-Fm-FMz" customClass="ViewController" customModule="GoogleMapDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,26 +80,63 @@
                                     <constraint firstItem="JTi-MX-Oh0" firstAttribute="top" secondItem="XSn-No-oOl" secondAttribute="top" constant="30" id="iSE-ld-doQ"/>
                                 </constraints>
                             </view>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="x0C-7B-IUk">
+                                <rect key="frame" x="196" y="420" width="22" height="27.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="5lN-W0-Rh1"/>
+                                    <constraint firstAttribute="width" secondItem="x0C-7B-IUk" secondAttribute="height" multiplier="4:5" id="BZd-sZ-kpv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5RS-ah-XV3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XSn-No-oOl" firstAttribute="leading" secondItem="5RS-ah-XV3" secondAttribute="leading" id="Em2-JP-b3y"/>
+                            <constraint firstItem="x0C-7B-IUk" firstAttribute="bottom" secondItem="VR2-Ys-VbV" secondAttribute="centerY" id="TUe-ey-uHq"/>
                             <constraint firstItem="XSn-No-oOl" firstAttribute="trailing" secondItem="5RS-ah-XV3" secondAttribute="trailing" id="gIB-N5-q4w"/>
+                            <constraint firstItem="x0C-7B-IUk" firstAttribute="centerX" secondItem="VR2-Ys-VbV" secondAttribute="centerX" id="jLo-47-Jea"/>
                             <constraint firstAttribute="bottom" secondItem="XSn-No-oOl" secondAttribute="bottom" id="ooi-RS-13J"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Demo" id="eaL-Lj-3zG">
+                        <barButtonItem key="rightBarButtonItem" title="Set Location" id="xgi-1Y-VrA">
+                            <connections>
+                                <action selector="setLocationButtonPressed:" destination="fd3-Fm-FMz" id="gfR-Bf-LiR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="controlPanel" destination="XSn-No-oOl" id="KEV-IR-3O5"/>
+                        <outlet property="pinImageView" destination="x0C-7B-IUk" id="HpP-XP-sOF"/>
+                        <outlet property="setLocationButton" destination="xgi-1Y-VrA" id="7yY-Vg-Jj5"/>
                         <outlet property="stateView" destination="v36-DX-FWP" id="Pd9-UG-po3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rrP-Wt-cYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2776.811594202899" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JY9-da-rpq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sYs-PX-Nz1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Czh-I3-RKH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fd3-Fm-FMz" kind="relationship" relationship="rootViewController" id="bTt-EX-v3L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J5f-Qg-to9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1866.6666666666667" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
+        <image name="mappin" catalog="system" width="105" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
