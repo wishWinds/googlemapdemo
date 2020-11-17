@@ -102,6 +102,12 @@ class ViewController: UIViewController {
                 let current = CLLocation(latitude: self.mapView.myLocation!.coordinate.latitude, longitude: self.mapView.myLocation!.coordinate.longitude)
                 let distance = center.distance(from: current)
                 self.distanceLabel.text = "\(Int(distance)) m"
+                
+                if distance <= 100 {
+                    self.checkState = .in
+                } else {
+                    self.checkState = .out
+                }
             }
         })
         
