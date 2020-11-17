@@ -18,6 +18,7 @@ enum SetLocationState {
 class ViewController: UIViewController {
 
     @IBOutlet weak var controlPanel: UIView!
+    @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var stateView: UIView!
     
     @IBOutlet weak var setLocationButton: UIBarButtonItem!
@@ -94,6 +95,13 @@ class ViewController: UIViewController {
                 self.firstUpdateLocation = false
                 
                 self.mapView.camera = GMSCameraPosition(latitude: self.mapView.myLocation!.coordinate.latitude, longitude: self.mapView.myLocation!.coordinate.longitude, zoom: 15)
+            }
+            
+            if let region = RegionManager.shared.allMonitoringRegions().first as? CLCircularRegion {
+                let center = CLLocation(latitude: region.center.latitude, longitude: region.center.longitude)
+                let current = CLLocation(latitude: self.mapView.myLocation!.coordinate.latitude, longitude: self.mapView.myLocation!.coordinate.longitude)
+                let distance = center.distance(from: current)
+                self.distanceLabel.text = "\(Int(distance)) m"
             }
         })
         
