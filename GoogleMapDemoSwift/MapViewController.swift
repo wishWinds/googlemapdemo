@@ -209,6 +209,9 @@ class MapViewController: UIViewController {
     
     func checkIn() {
         checkState = .in
+        if let region = Preset.monitoringRegion {
+            RegionManager.shared.monitoring(region: region)
+        }
         SPHUD.show(with: SPHUDTypeSuccess, title: "You have Check-In", on: view, animated: true, hideAutomatically: true)
     }
     
