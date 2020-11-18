@@ -51,6 +51,10 @@ class RegionManager: NSObject {
         let region = CLCircularRegion(center: location, radius: radius, identifier: "\(location.latitude),\(location.longitude)")
         locationManager.startMonitoring(for: region)
     }
+    
+    func monitoring(region: CLCircularRegion) {
+        locationManager.startMonitoring(for: region)
+    }
 }
 
 extension RegionManager: CLLocationManagerDelegate {

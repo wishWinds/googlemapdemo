@@ -8,4 +8,13 @@ target 'GoogleMapDemoSwift' do
 
   pod 'GoogleMaps', '4.0.0'
   pod 'JZLocationConverter'
+  pod 'SnapKit'
+  
+#  pod 'SPUtilities', :path => '../../lib/SPUtilities'
+#  pod 'SPUIKit', :path => '../../lib/SPUIKit'
+#  pod 'SPTools', :path => '../../lib/SPTools'
+  
+  pod 'SPUtilities', :git => 'https://git.xiaocaomei.site:4430/shupeng/SPUtilities.git'
+  pod 'SPUIKit', :git => 'https://git.xiaocaomei.site:4430/shupeng/SPUIKit.git'
+  pod 'SPTools', :git => 'https://git.xiaocaomei.site:4430/shupeng/SPTools.git'
 end

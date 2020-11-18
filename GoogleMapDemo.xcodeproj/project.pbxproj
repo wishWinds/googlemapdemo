@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0427BE12B398A9DBC437FA8F /* Pods_GoogleMapDemoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3EA4D36DC6148AF1E7C44 /* Pods_GoogleMapDemoSwift.framework */; };
 		FE740DE7255C1CE00088ABF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE740DE6255C1CE00088ABF1 /* AppDelegate.swift */; };
-		FE740DEB255C1CE00088ABF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE740DEA255C1CE00088ABF1 /* ViewController.swift */; };
+		FE740DEB255C1CE00088ABF1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE740DEA255C1CE00088ABF1 /* MapViewController.swift */; };
 		FE740DEE255C1CE00088ABF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE740DEC255C1CE00088ABF1 /* Main.storyboard */; };
 		FE740DF0255C1CE30088ABF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE740DEF255C1CE30088ABF1 /* Assets.xcassets */; };
 		FE740DF3255C1CE30088ABF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE740DF1255C1CE30088ABF1 /* LaunchScreen.storyboard */; };
@@ -22,6 +22,10 @@
 		FE740E27255D91260088ABF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE740E25255D91260088ABF1 /* Main.storyboard */; };
 		FE740E29255D91290088ABF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE740E28255D91290088ABF1 /* Assets.xcassets */; };
 		FE740E2C255D91290088ABF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE740E2A255D91290088ABF1 /* LaunchScreen.storyboard */; };
+		FEFA23DC2564B15100230519 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA23DB2564B15100230519 /* SettingsViewController.swift */; };
+		FEFA23E325653BCE00230519 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA23E225653BCD00230519 /* RootNavigationController.swift */; };
+		FEFA23E925653FC200230519 /* mapstyle-night.json in Resources */ = {isa = PBXBuildFile; fileRef = FEFA23E825653FC200230519 /* mapstyle-night.json */; };
+		FEFA2412256557F100230519 /* Preset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA2411256557F100230519 /* Preset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +34,7 @@
 		EBD3EA4D36DC6148AF1E7C44 /* Pods_GoogleMapDemoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMapDemoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE740DE4255C1CE00088ABF1 /* GoogleMapDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE740DE6255C1CE00088ABF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE740DEA255C1CE00088ABF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE740DEA255C1CE00088ABF1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FE740DED255C1CE00088ABF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE740DEF255C1CE30088ABF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE740DF2255C1CE30088ABF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		FE740E2B255D91290088ABF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE740E2D255D91290088ABF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEC58D83255AB32B0027D065 /* 11-10-2020-1937.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "11-10-2020-1937.gpx"; sourceTree = "<group>"; };
+		FEFA23DB2564B15100230519 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FEFA23E225653BCD00230519 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		FEFA23E825653FC200230519 /* mapstyle-night.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mapstyle-night.json"; sourceTree = "<group>"; };
+		FEFA2411256557F100230519 /* Preset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,15 +117,19 @@
 		FE740DE5255C1CE00088ABF1 /* GoogleMapDemoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FEFA2411256557F100230519 /* Preset.swift */,
 				FE740E06255C209D0088ABF1 /* constants.swift */,
 				FE740E0E255D42B10088ABF1 /* RegionManager.swift */,
 				FE740E11255D79A90088ABF1 /* UNUserNotificationCenterExt.swift */,
 				FE740DE6255C1CE00088ABF1 /* AppDelegate.swift */,
-				FE740DEA255C1CE00088ABF1 /* ViewController.swift */,
+				FEFA23E225653BCD00230519 /* RootNavigationController.swift */,
+				FE740DEA255C1CE00088ABF1 /* MapViewController.swift */,
+				FEFA23DB2564B15100230519 /* SettingsViewController.swift */,
 				FE740DEC255C1CE00088ABF1 /* Main.storyboard */,
 				FE740DEF255C1CE30088ABF1 /* Assets.xcassets */,
 				FE740DF1255C1CE30088ABF1 /* LaunchScreen.storyboard */,
 				FE740DF4255C1CE30088ABF1 /* Info.plist */,
+				FEFA23E825653FC200230519 /* mapstyle-night.json */,
 			);
 			path = GoogleMapDemoSwift;
 			sourceTree = "<group>";
@@ -226,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE740DF3255C1CE30088ABF1 /* LaunchScreen.storyboard in Resources */,
+				FEFA23E925653FC200230519 /* mapstyle-night.json in Resources */,
 				FE740DF0255C1CE30088ABF1 /* Assets.xcassets in Resources */,
 				FE740DEE255C1CE00088ABF1 /* Main.storyboard in Resources */,
 			);
@@ -308,10 +321,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE740E12255D79A90088ABF1 /* UNUserNotificationCenterExt.swift in Sources */,
-				FE740DEB255C1CE00088ABF1 /* ViewController.swift in Sources */,
+				FE740DEB255C1CE00088ABF1 /* MapViewController.swift in Sources */,
+				FEFA2412256557F100230519 /* Preset.swift in Sources */,
 				FE740E0F255D42B10088ABF1 /* RegionManager.swift in Sources */,
 				FE740DE7255C1CE00088ABF1 /* AppDelegate.swift in Sources */,
 				FE740E07255C209D0088ABF1 /* constants.swift in Sources */,
+				FEFA23E325653BCE00230519 /* RootNavigationController.swift in Sources */,
+				FEFA23DC2564B15100230519 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
