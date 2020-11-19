@@ -10,19 +10,19 @@ import UIKit
 import CoreLocation
 
 class Preset {
-    static var monitoringRegion: CLCircularRegion? {
+    static var monitoringLocation: CLLocationCoordinate2D? {
         get {
             if let latitude = UserDefaults.standard.object(forKey: "com.shupeng.googlemapdemo.monitoringLatitude") as? Double,
                let longitude = UserDefaults.standard.object(forKey: "com.shupeng.googlemapdemo.monitoringLongitude") as? Double {
-                return CLCircularRegion(center: CLLocationCoordinate2D(latitude: latitude, longitude: longitude), radius: Preset.regionRadius, identifier: "\(latitude),\(longitude)")
+                return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
             } else {
                 return nil
             }
         }
 
         set {
-            UserDefaults.standard.setValue(newValue?.center.latitude, forKey: "com.shupeng.googlemapdemo.monitoringLatitude")
-            UserDefaults.standard.setValue(newValue?.center.longitude, forKey: "com.shupeng.googlemapdemo.monitoringLongitude")
+            UserDefaults.standard.setValue(newValue?.latitude, forKey: "com.shupeng.googlemapdemo.monitoringLatitude")
+            UserDefaults.standard.setValue(newValue?.longitude, forKey: "com.shupeng.googlemapdemo.monitoringLongitude")
         }
     }
     
@@ -56,9 +56,9 @@ class Preset {
         }
     }
     
-    static var regionY: CGFloat {
+    static var regionY: Double {
         get {
-            if let regionY = UserDefaults.standard.object(forKey: "com.shupeng.googlemapdemo.regionY") as? CGFloat {
+            if let regionY = UserDefaults.standard.object(forKey: "com.shupeng.googlemapdemo.regionY") as? Double {
                 return regionY
             } else {
                 self.regionY = 100
